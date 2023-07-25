@@ -3,14 +3,16 @@ import styled from 'styled-components';
 const Nav = styled.nav`
   position: fixed;
   width: 100%;
+  height: 75px;
   z-index: 1000;
 
   .nav-center {
-    display: grid;
+    display: none;
     grid-template-columns: auto 1fr auto;
     width: 90%;
+    height: 100%;
     margin: 0 auto;
-    padding: 1rem;
+    padding: 0.5rem;
 
     .logo-container {
       display: flex;
@@ -18,7 +20,7 @@ const Nav = styled.nav`
 
       a {
         display: block;
-        font-size: 1.5rem;
+        font-size: 1.2rem;
         font-weight: 700;
         background: var(--gradient-text);
         background-clip: text;
@@ -38,7 +40,7 @@ const Nav = styled.nav`
       li {
         a {
           display: inline-block;
-          padding: 1rem 2rem;
+          padding: 1rem 0;
           font-size: 1rem;
           letter-spacing: var(--letter-spacing);
           text-transform: uppercase;
@@ -68,10 +70,16 @@ const Nav = styled.nav`
         a.active {
           transform: scale(1.1);
           &::after {
-            width: 60%;
+            width: 100%;
           }
         }
       }
+    }
+  }
+
+  @media screen and (min-width: 1025px) {
+    .nav-center {
+      display: grid;
     }
   }
 `;

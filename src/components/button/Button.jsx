@@ -1,4 +1,13 @@
-const Button = () => {
-  return <div>Button</div>;
+import { memo } from 'react';
+import { BaseButton } from './Button.style';
+
+const Button = ({ children, linkToGo }) => {
+  return (
+    <BaseButton>
+      <a href={linkToGo}>
+        <span>{children}</span>
+      </a>
+    </BaseButton>
+  );
 };
-export default Button;
+export default memo(Button);

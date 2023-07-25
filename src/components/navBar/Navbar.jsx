@@ -2,6 +2,7 @@ import { useState } from 'react';
 import Button from '../button/Button';
 import Nav from './Navbar.style';
 import { navigationLinks } from '../../data';
+import Menu from '../menu/Menu';
 
 const Navbar = () => {
   const [activeLink, setActiveLink] = useState('home');
@@ -34,8 +35,9 @@ const Navbar = () => {
             })}
           </ul>
         </div>
-        <Button />
+        <Button linkToGo={'contact-me'}>HIRE ME</Button>
       </div>
+      <Menu />
     </Nav>
   );
 };

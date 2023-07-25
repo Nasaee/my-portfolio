@@ -1,4 +1,14 @@
+import Wrapper from './menu.style';
+import { GiHamburgerMenu } from 'react-icons/gi';
+
 const Menu = () => {
-  return <div>Menu</div>;
+  return (
+    <Wrapper>
+      <div className='icon-container'>
+        <GiHamburgerMenu />
+      </div>
+      <ul className='menu-lists'></ul>
+    </Wrapper>
+  );
 };
 export default Menu;
