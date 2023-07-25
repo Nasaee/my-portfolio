@@ -1,6 +1,6 @@
 import { nanoid } from 'nanoid';
 
-export const sectionNavigation = [
+export const navigationLinks = [
   { htmlID: 'home', text: 'home', id: nanoid() },
   { htmlID: 'skills', text: 'skills', id: nanoid() },
   { htmlID: 'projects', text: 'projects', id: nanoid() },
