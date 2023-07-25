@@ -1,3 +1,13 @@
+import { nanoid } from 'nanoid';
+
+export const sectionNavigation = [
+  { htmlID: 'home', text: 'home', id: nanoid() },
+  { htmlID: 'skills', text: 'skills', id: nanoid() },
+  { htmlID: 'projects', text: 'projects', id: nanoid() },
+  { htmlID: 'about-me', text: 'about me', id: nanoid() },
+  { htmlID: 'contact', text: 'contact', id: nanoid() },
+];
+
 export const kills = [
   { skillName: '', skillIcon: '', skillDescription: '' },
   { skillName: '', skillIcon: '', skillDescription: '' },
