@@ -1,12 +1,19 @@
+import { useState } from 'react';
 import Button from '../button/Button';
 import Nav from './Navbar.style';
 import { navigationLinks } from '../../data';
 
 const Navbar = () => {
+  const [activeLink, setActiveLink] = useState('home');
+
+  const handleClickLink = (htmlID) => {
+    setActiveLink(htmlID);
+  };
+
   return (
     <Nav>
       <div className='nav-center'>
-        <div className='icon-container'>
+        <div className='logo-container'>
           <a href='#'>NASAEE.DEV</a>
         </div>
         <div className='nav-links-container'>
@@ -15,7 +22,13 @@ const Navbar = () => {
               const { htmlID, id, text } = link;
               return (
                 <li key={id}>
-                  <a href={`#${htmlID}`}>{text}</a>
+                  <a
+                    href={`#${htmlID}`}
+                    onClick={() => handleClickLink(htmlID)}
+                    className={activeLink === htmlID ? 'active' : ''}
+                  >
+                    {text}
+                  </a>
                 </li>
               );
             })}

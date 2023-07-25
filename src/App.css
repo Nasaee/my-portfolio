@@ -9,6 +9,7 @@
   --transition: 0.35s ease-in-out;
   --menu-color: #e6e7e8;
   --letter-spacing: 2.5px;
+
   --border-radius: 3px;
   --color-footer: #031b34;
   --color-blog: #042c54;
@@ -40,6 +41,10 @@ body {
 img {
   width: 100%;
   height: auto;
+}
+
+ul {
+  list-style: none;
 }
 
 a {
