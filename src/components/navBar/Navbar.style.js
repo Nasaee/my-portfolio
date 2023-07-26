@@ -6,6 +6,10 @@ const Nav = styled.nav`
   height: 75px;
   z-index: 1000;
 
+  &.scrolled {
+    background: #4f555d;
+  }
+
   .nav-center {
     display: none;
     grid-template-columns: auto 1fr auto;
