@@ -4,7 +4,7 @@ import { BaseButton } from './Button.style';
 const Button = ({ children, linkToGo }) => {
   return (
     <BaseButton>
-      <a href={linkToGo}>
+      <a href={linkToGo} onClick={(e) => e.preventDefault()}>
         <span>{children}</span>
       </a>
     </BaseButton>

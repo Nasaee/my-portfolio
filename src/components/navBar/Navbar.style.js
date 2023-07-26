@@ -56,7 +56,6 @@ const Nav = styled.nav`
           bottom: 5px;
           left: 50%;
           transform: translateX(-50%);
-          /* width: 60%; */
           width: 0;
           height: 1.5px;
           background: var(--gradient-text);

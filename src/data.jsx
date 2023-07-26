@@ -1,11 +1,24 @@
 import { nanoid } from 'nanoid';
+import { AiFillHome, AiOutlineCode } from 'react-icons/ai';
+import { GrProjects } from 'react-icons/gr';
+import { BsFillPersonFill, BsFillTelephoneFill } from 'react-icons/bs';
 
 export const navigationLinks = [
-  { htmlID: 'home', text: 'home', id: nanoid() },
-  { htmlID: 'skills', text: 'skills', id: nanoid() },
-  { htmlID: 'projects', text: 'projects', id: nanoid() },
-  { htmlID: 'about-me', text: 'about me', id: nanoid() },
-  { htmlID: 'contact', text: 'contact', id: nanoid() },
+  { htmlID: 'home', text: 'home', id: nanoid(), icon: <AiFillHome /> },
+  { htmlID: 'skills', text: 'skills', id: nanoid(), icon: <AiOutlineCode /> },
+  { htmlID: 'projects', text: 'projects', id: nanoid(), icon: <GrProjects /> },
+  {
+    htmlID: 'about-me',
+    text: 'about me',
+    id: nanoid(),
+    icon: <BsFillPersonFill />,
+  },
+  {
+    htmlID: 'contact',
+    text: 'contact',
+    id: nanoid(),
+    icon: <BsFillTelephoneFill />,
+  },
 ];
 
 export const kills = [

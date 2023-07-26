@@ -1,15 +1,11 @@
-import { useState } from 'react';
 import Button from '../button/Button';
 import Nav from './Navbar.style';
 import { navigationLinks } from '../../data';
 import Menu from '../menu/Menu';
+import { useGlobalContext } from '../../context';
 
 const Navbar = () => {
-  const [activeLink, setActiveLink] = useState('home');
-
-  const handleClickLink = (htmlID) => {
-    setActiveLink(htmlID);
-  };
+  const { activeLink, handleClickLink } = useGlobalContext();
 
   return (
     <Nav>
