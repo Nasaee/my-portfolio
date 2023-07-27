@@ -7,7 +7,7 @@ const Hero = () => {
       <section id='home' className='hero'>
         <div className='hero-content'></div>
         <div className='hero-img'>
-          <img src={profileImg} alt='' />
+          <img src={profileImg} alt='profile image' className='profileImg' />
         </div>
       </section>
     </Style>
