@@ -8,7 +8,7 @@ const Navbar = () => {
   const { scrolled, activeLink, handleClickLink } = useGlobalContext();
 
   return (
-    <Nav className={scrolled ? 'scrolled' : ''}>
+    <Nav className={scrolled ? 'scrolled ' : ''} data-aos='fade-down'>
       <div className='nav-center'>
         <div className='logo-container'>
           <a href='#'>NASAEE.DEV</a>
