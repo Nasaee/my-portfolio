@@ -10,7 +10,13 @@ const Hero = () => {
 
   useEffect(() => {
     const typed = new Typed(typedEl.current, {
-      strings: ['', 'Web Developer', 'Web Designer', 'UX/UI Designer'], // Strings to display
+      strings: [
+        '',
+        'Nasa-ee',
+        'Web Developer',
+        'Web Designer',
+        'UX/UI Designer',
+      ], // Strings to display
       // Speed settings, try diffrent values untill you get good results
       startDelay: 300,
       typeSpeed: 100,
