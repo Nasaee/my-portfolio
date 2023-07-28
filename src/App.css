@@ -9,12 +9,14 @@
   --transition: 0.35s ease-in-out;
   --menu-color: #e6e7e8;
   --menu-bg-color: #cdced1;
+  --title-color: #cdd1d6;
   --letter-spacing: 2.5px;
-
   --border-radius: 4px;
+  --nav-height: 75px;
+
   --color-footer: #031b34;
   --color-blog: #042c54;
-  --color-text: #81afdd;
+  --color-text: #749ec7;
   --color-subtext: #ff8a71;
   --button-color: #ff4820;
 }

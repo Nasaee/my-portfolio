@@ -7,6 +7,7 @@ export const AppProvider = ({ children }) => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
 
+  // check when scroll 50vh
   useEffect(() => {
     const onScroll = () => {
       if (window.scrollY > 50) {
@@ -20,6 +21,14 @@ export const AppProvider = ({ children }) => {
 
     return () => window.removeEventListener('scroll', onScroll);
   }, []);
+
+  // set Hero margin top = nav width
+  // useEffect(() => {
+  //   const navHeight = document.querySelector('nav').offsetHeight;
+  //   document
+  //     .querySelector('.hero')
+  //     .style.setProperty('--nav-height', `${navHeight}px`);
+  // }, []);
 
   const handleClickLink = (htmlID) => {
     setActiveLink(htmlID);

@@ -1,12 +1,23 @@
 import { nanoid } from 'nanoid';
-import { AiFillHome, AiOutlineCode } from 'react-icons/ai';
-import { GrProjects } from 'react-icons/gr';
-import { BsFillPersonFill, BsFillTelephoneFill } from 'react-icons/bs';
+import { AiFillHome, AiTwotoneCode, AiFillAppstore } from 'react-icons/ai';
+import {
+  BsFillPersonFill,
+  BsFillTelephoneFill,
+  BsLinkedin,
+} from 'react-icons/bs';
+import { GrFacebook } from 'react-icons/gr';
+import { FaGithub } from 'react-icons/fa';
+import { SiGmail, SiTwitter } from 'react-icons/si';
 
 export const navigationLinks = [
   { htmlID: 'home', text: 'home', id: nanoid(), icon: <AiFillHome /> },
-  { htmlID: 'skills', text: 'skills', id: nanoid(), icon: <AiOutlineCode /> },
-  { htmlID: 'projects', text: 'projects', id: nanoid(), icon: <GrProjects /> },
+  { htmlID: 'skills', text: 'skills', id: nanoid(), icon: <AiTwotoneCode /> },
+  {
+    htmlID: 'projects',
+    text: 'projects',
+    id: nanoid(),
+    icon: <AiFillAppstore />,
+  },
   {
     htmlID: 'about-me',
     text: 'about me',
@@ -76,19 +87,36 @@ export const personalInfo = {
 };
 
 export const socials = [
-  { name: 'Github', url: 'https://github.com/Nasaee', icon: '' },
+  {
+    name: 'Github',
+    url: 'https://github.com/Nasaee',
+    icon: <FaGithub />,
+    id: nanoid(),
+  },
   {
     name: 'Facebook',
     url: 'https://www.facebook.com/nasaee.madadam',
-    icon: '',
+    icon: <GrFacebook />,
+    id: nanoid(),
   },
   {
     name: 'LinkIN',
     url: 'https://www.linkedin.com/in/nasa-ee-madadam-b3a0b7272/',
-    icon: '',
+    icon: <BsLinkedin />,
+    id: nanoid(),
   },
-  { name: 'Twitter', url: 'https://twitter.com/nasa_ee', Icon: '' },
-  { name: 'Email', url: 'nasaee.dev@gmail.com', icon: '' },
+  {
+    name: 'Twitter',
+    url: 'https://twitter.com/nasa_ee',
+    icon: <SiTwitter />,
+    id: nanoid(),
+  },
+  {
+    name: 'Email',
+    url: 'nasaee.dev@gmail.com',
+    icon: <SiGmail />,
+    id: nanoid(),
+  },
 ];
 
 export const contectMe = {

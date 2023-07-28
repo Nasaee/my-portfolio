@@ -3,7 +3,9 @@ import styled from 'styled-components';
 const Nav = styled.nav`
   position: fixed;
   width: 100%;
-  height: 75px;
+  height: var(--nav-height);
+  top: 0;
+  left: 0;
   z-index: 1000;
 
   &.scrolled {
