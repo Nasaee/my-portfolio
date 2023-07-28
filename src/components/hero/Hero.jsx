@@ -28,7 +28,7 @@ const Hero = () => {
 
   return (
     <Section id='home' className='hero'>
-      <div className='hero-content'>
+      <div className='hero-content' data-aos='fade-right'>
         <p className='welcome'>
           <span></span>
           <span></span>
@@ -39,6 +39,7 @@ const Hero = () => {
         <h1>
           Hi I&apos;m <span ref={typedEl}>Web Deverloper</span>
         </h1>
+
         <p className='intro-myself'>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua. Aliquam
@@ -63,7 +64,11 @@ const Hero = () => {
           <Button>HIRE ME</Button>
         </div>
       </div>
-      <div className='hero-img-container'>
+      <div
+        className='hero-img-container'
+        data-aos='fade-left'
+        data-aos-delay='900'
+      >
         <img src={profileImg} alt='profile image' className='profileImg' />
       </div>
     </Section>
