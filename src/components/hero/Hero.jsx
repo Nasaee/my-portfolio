@@ -28,7 +28,6 @@ const Hero = () => {
 
   return (
     <Section id='home' className='hero'>
-      {/* #24 Still in View */}
       <div className='hero-content'>
         <p className='welcome'>
           <span></span>
