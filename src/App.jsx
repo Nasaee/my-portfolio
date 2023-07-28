@@ -4,6 +4,7 @@ import Hero from './components/hero/Hero';
 import NavBar from './components/navBar/Navbar';
 import Aos from 'aos';
 import 'aos/dist/aos.css';
+import Skills from './components/skills/Skills';
 
 function App() {
   useEffect(() => {
@@ -18,6 +19,7 @@ function App() {
     <main>
       <NavBar />
       <Hero />
+      <Skills />
     </main>
   );
 }
