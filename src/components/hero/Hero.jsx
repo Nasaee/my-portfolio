@@ -43,7 +43,7 @@ const Hero = () => {
           WELCOME TO MY PORTFOLIO
         </p>
         <h1>
-          Hi I&apos;m <span ref={typedEl}>Web Deverloper</span>
+          Hi I&apos;m &nbsp;<span ref={typedEl}></span>
         </h1>
 
         <p className='intro-myself'>
