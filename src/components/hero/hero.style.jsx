@@ -146,7 +146,7 @@ const Section = styled.section`
     ul.socials {
       display: flex;
       gap: 30px;
-      margin-top: 2.5rem;
+      margin-top: 2.3rem;
 
       li a svg {
         width: 24px;
