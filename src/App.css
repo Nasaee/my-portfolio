@@ -6,6 +6,7 @@
   --gradient-text: linear-gradient(89.97deg, #ae67fa 1.84%, #f49867 102.67%);
 
   --background-color: #040c18;
+  --main-color: #be4bdb;
   --transition: 0.35s ease-in-out;
   --menu-color: #e6e7e8;
   --menu-bg-color: #cdced1;
@@ -13,6 +14,7 @@
   --letter-spacing: 2.5px;
   --border-radius: 4px;
   --nav-height: 75px;
+  --section-padding: 3.5rem 4rem;
 
   --color-footer: #031b34;
   --color-blog: #042c54;

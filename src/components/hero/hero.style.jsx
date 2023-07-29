@@ -133,7 +133,7 @@ const Section = styled.section`
       color: var(--title-color);
       margin-top: 3rem;
       span {
-        color: #be4bdb;
+        color: var(--main-color);
       }
     }
 
