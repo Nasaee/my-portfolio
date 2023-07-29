@@ -42,11 +42,12 @@ const Wrapper = styled.div`
     button {
       position: absolute;
       background: transparent;
-      padding: 1.5rem;
+      padding: 2rem 3rem;
 
       svg {
         width: 40px;
         height: 40px;
+        color: var(--title-color);
       }
     }
 
@@ -69,7 +70,7 @@ const Wrapper = styled.div`
           font-size: 1.5rem;
           font-weight: 800;
           text-transform: uppercase;
-          color: var(--background-color);
+          color: var(--title-color);
           letter-spacing: var(--letter-spacing);
 
           .link-content {

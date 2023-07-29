@@ -188,6 +188,61 @@ const Section = styled.section`
       }
     }
   }
+
+  @media screen and (max-width: 1400px) {
+    .hero-content {
+      padding: 3rem;
+    }
+  }
+  @media screen and (min-width: 1115px) and (max-width: 1307px) {
+    .hero-content {
+      padding: 2rem;
+    }
+
+    h1 {
+      font-size: 2.2rem;
+    }
+
+    .hero-img-container {
+      padding: 2rem;
+    }
+
+    .profileImg {
+      width: 22rem !important;
+      height: 22rem !important;
+    }
+  }
+
+  @media screen and (min-width: 1025px) and (max-width: 1114px) {
+    & {
+      /* grid-template-columns: 3fr 1fr; */
+    }
+
+    h1 {
+      font-size: 3rem !important;
+    }
+
+    p.intro-myself {
+      font-size: 1rem;
+    }
+
+    .profileImg {
+      width: 18rem !important;
+      height: 18rem !important;
+    }
+  }
+
+  @media screen and (max-width: 1024px) {
+    & {
+      grid-template-columns: 1fr;
+      height: auto;
+    }
+
+    .profileImg {
+      width: 20rem !important;
+      height: 20rem !important;
+    }
+  }
 `;
 
 export default Section;

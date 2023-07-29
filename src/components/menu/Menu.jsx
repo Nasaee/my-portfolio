@@ -2,7 +2,7 @@ import { useGlobalContext } from '../../context';
 import Wrapper from './menu.style';
 import { GiHamburgerMenu } from 'react-icons/gi';
 import { navigationLinks } from '../../data';
-import { GrClose } from 'react-icons/gr';
+import { AiOutlineClose } from 'react-icons/ai';
 
 const Menu = () => {
   const { isMenuOpen, closeMenu, openMenu, handleClickLink } =
@@ -23,7 +23,7 @@ const Menu = () => {
       </div>
       <div className={`menu-lists ${isMenuOpen ? 'show-menu' : ''}`}>
         <button type='button' onClick={() => closeMenu()}>
-          <GrClose />
+          <AiOutlineClose />
         </button>
         <ul>
           {navigationLinks.map((link) => {
