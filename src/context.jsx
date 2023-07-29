@@ -7,7 +7,6 @@ export const AppProvider = ({ children }) => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
 
-  // check when scroll 50vh
   useEffect(() => {
     const onScroll = () => {
       if (window.scrollY > 50) {

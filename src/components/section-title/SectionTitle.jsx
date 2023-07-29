@@ -4,7 +4,7 @@ const SectionTitle = ({ title, subTitle }) => {
   return (
     <Style>
       <h2 className='title'>{title}</h2>
-      <p className='sub-title'>{subTitle}</p>
+      <p className='subtitle'>{subTitle}</p>
     </Style>
   );
 };
