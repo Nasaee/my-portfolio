@@ -5,7 +5,8 @@ const Style = styled.div`
   .title {
     font-family: var(--title-font);
     font-size: 1.5rem;
-    letter-spacing: 5px;
+    font-weight: 400;
+    letter-spacing: 3px;
     text-transform: uppercase;
     color: var(--title-color);
   }
