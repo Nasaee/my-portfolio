@@ -21,14 +21,6 @@ export const AppProvider = ({ children }) => {
     return () => window.removeEventListener('scroll', onScroll);
   }, []);
 
-  // set Hero margin top = nav width
-  // useEffect(() => {
-  //   const navHeight = document.querySelector('nav').offsetHeight;
-  //   document
-  //     .querySelector('.hero')
-  //     .style.setProperty('--nav-height', `${navHeight}px`);
-  // }, []);
-
   const handleClickLink = (htmlID) => {
     setActiveLink(htmlID);
   };

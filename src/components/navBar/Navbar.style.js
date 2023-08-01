@@ -9,7 +9,7 @@ const Nav = styled.nav`
   z-index: 1000;
 
   &.scrolled {
-    background: #1d242f;
+    background: var(--background-color);
   }
 
   .nav-center {

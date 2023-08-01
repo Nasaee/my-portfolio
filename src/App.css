@@ -19,15 +19,13 @@
   --border-radius: 4px;
   --nav-height: 75px;
   --section-padding: 3.5rem 4rem;
-  --color-blog: #042c54;
-
-  --color-footer: #031b34;
-  --color-text: #749ec7;
-  --color-subtext: #ff8a71;
+  --color-blog: #041c32;
   --button-color: #ff4820;
+  --color-text: #749ec7;
 }
 
 /************ Default Css ************/
+
 * {
   margin: 0;
   padding: 0;

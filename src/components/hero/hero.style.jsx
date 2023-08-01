@@ -7,7 +7,7 @@ const Section = styled.section`
   grid-template-columns: 1.5fr 1fr;
 
   .hero-content {
-    padding: 3rem 6rem;
+    padding: 6rem;
 
     p.welcome {
       display: inline-block;
@@ -186,6 +186,12 @@ const Section = styled.section`
       100% {
         transform: translateY(-20px);
       }
+    }
+  }
+
+  @media screen and (min-width: 1750px) {
+    & {
+      padding: 5rem;
     }
   }
 

@@ -56,10 +56,14 @@ const Hero = () => {
         </p>
         <ul className='socials'>
           {socials.map((social) => {
-            const { icon, id, url } = social;
+            const { icon, id, url, name } = social;
             return (
               <li key={id}>
-                <a href={url} target='_blank' rel='noreferrer'>
+                <a
+                  href={name.toLowerCase() === 'email' ? `mailto:${url}` : url}
+                  target='_blank'
+                  rel='noreferrer'
+                >
                   {icon}
                 </a>
               </li>

@@ -8,6 +8,18 @@ import {
 import { GrFacebook } from 'react-icons/gr';
 import { FaGithub } from 'react-icons/fa';
 import { SiGmail, SiTwitter } from 'react-icons/si';
+import {
+  JsImg,
+  htmlImg,
+  cssImg,
+  tailwindImg,
+  reactImg,
+  sassImg,
+  nodeImg,
+  figmaImg,
+  bootstrapImg,
+  postgresqlImg,
+} from './assets/img/skills';
 
 export const navigationLinks = [
   { htmlID: 'home', text: 'home', id: nanoid(), icon: <AiFillHome /> },
@@ -32,10 +44,58 @@ export const navigationLinks = [
   },
 ];
 
-export const kills = [
-  { skillName: '', skillIcon: '', skillDescription: '' },
-  { skillName: '', skillIcon: '', skillDescription: '' },
-  { skillName: '', skillIcon: '', skillDescription: '' },
+export const skills = [
+  {
+    skillName: 'HTML',
+    skillIcon: htmlImg,
+    id: nanoid(),
+  },
+  {
+    skillName: 'CSS',
+    skillIcon: cssImg,
+    id: nanoid(),
+  },
+  {
+    skillName: 'JavaScript',
+    skillIcon: JsImg,
+    id: nanoid(),
+  },
+  {
+    skillName: 'React.js',
+    skillIcon: reactImg,
+    id: nanoid(),
+  },
+  {
+    skillName: 'Node.js',
+    skillIcon: nodeImg,
+    id: nanoid(),
+  },
+  {
+    skillName: 'PostgreSQL',
+    skillIcon: postgresqlImg,
+    id: nanoid(),
+  },
+  {
+    skillName: 'Tailwind CSS',
+    skillIcon: tailwindImg,
+    id: nanoid(),
+  },
+  {
+    skillName: 'Bootstrap',
+    skillIcon: bootstrapImg,
+    id: nanoid(),
+  },
+  {
+    skillName: 'SASS',
+    skillIcon: sassImg,
+    id: nanoid(),
+  },
+
+  {
+    skillName: 'Figma',
+    skillIcon: figmaImg,
+    id: nanoid(),
+  },
 ];
 
 export const projects = [
