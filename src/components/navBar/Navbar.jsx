@@ -5,10 +5,10 @@ import Menu from '../menu/Menu';
 import { useGlobalContext } from '../../context';
 
 const Navbar = () => {
-  const { scrolled, activeLink, handleClickLink } = useGlobalContext();
+  const { activeLink, handleClickLink } = useGlobalContext();
 
   return (
-    <Nav className={scrolled ? 'scrolled ' : ''} data-aos='fade-down'>
+    <Nav data-aos='fade-down'>
       <div className='nav-center'>
         <div className='logo-container'>
           <a href='#'>NASAEE.DEV</a>

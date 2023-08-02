@@ -6,7 +6,29 @@ import { socials } from '../../data';
 import Button from '../button/Button';
 
 const Hero = () => {
+  const heroRef = useRef(null);
   const typedEl = useRef(null);
+
+  useEffect(() => {
+    const navbarEl = document.querySelector('nav');
+    const navbarElHeight = navbarEl.offsetHeight;
+
+    const observerFn = ([entry]) => {
+      if (!entry.isIntersecting) {
+        navbarEl.style.position = 'fixed';
+      } else {
+        navbarEl.style.position = 'absolute';
+      }
+    };
+    const heroSectionObserver = new IntersectionObserver(observerFn, {
+      root: null,
+      threshold: 0,
+      rootMargin: `${-navbarElHeight - 1}px`,
+    });
+    heroSectionObserver.observe(heroRef.current);
+
+    return () => heroSectionObserver.disconnect();
+  }, []);
 
   useEffect(() => {
     const typed = new Typed(typedEl.current, {
@@ -33,7 +55,7 @@ const Hero = () => {
   }, []);
 
   return (
-    <Section id='home' className='hero'>
+    <Section id='home' className='hero' ref={heroRef}>
       <div className='hero-content' data-aos='fade-right'>
         <p className='welcome'>
           <span></span>

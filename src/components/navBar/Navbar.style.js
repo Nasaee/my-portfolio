@@ -1,16 +1,13 @@
 import styled from 'styled-components';
 
 const Nav = styled.nav`
-  position: fixed;
+  position: absolute;
+  background: var(--background-color);
   width: 100%;
   height: var(--nav-height);
   top: 0;
   left: 0;
   z-index: 1000;
-
-  &.scrolled {
-    background: var(--background-color);
-  }
 
   .nav-center {
     display: none;

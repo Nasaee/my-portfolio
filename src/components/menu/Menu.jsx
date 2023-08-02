@@ -5,14 +5,7 @@ import { navigationLinks } from '../../data';
 import { AiOutlineClose } from 'react-icons/ai';
 
 const Menu = () => {
-  const { isMenuOpen, closeMenu, openMenu, handleClickLink } =
-    useGlobalContext();
-
-  const handleClick = (e, htmlID) => {
-    e.preventDefault();
-    closeMenu();
-    handleClickLink(htmlID);
-  };
+  const { isMenuOpen, closeMenu, openMenu } = useGlobalContext();
 
   return (
     <Wrapper>
@@ -29,8 +22,12 @@ const Menu = () => {
           {navigationLinks.map((link) => {
             const { htmlID, id, text, icon } = link;
             return (
-              <li key={id} onClick={(e) => handleClick(e, htmlID)}>
-                <a className='link' href={htmlID}>
+              <li key={id}>
+                <a
+                  className='link'
+                  href={`#${htmlID}`}
+                  onClick={() => closeMenu()}
+                >
                   <div className='link-content'>
                     {icon}
                     <span>{text}</span>

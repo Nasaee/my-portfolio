@@ -7,7 +7,7 @@ const Section = styled.section`
   grid-template-columns: 1.5fr 1fr;
 
   .hero-content {
-    padding: 6rem;
+    padding: 3rem 5rem;
 
     p.welcome {
       display: inline-block;
