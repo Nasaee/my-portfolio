@@ -6,7 +6,7 @@
   --font-family: 'Manrope', sans-serif;
   --subtitle-font: 'Paprika', cursive;
   --title-font: 'Poppins', sans-serif;
-
+  /* color */
   --gradient-text: linear-gradient(89.97deg, #ae67fa 1.84%, #f49867 102.67%);
 
   --background-color: #040c18;
@@ -15,13 +15,16 @@
   --menu-color: #e6e7e8;
   --menu-bg-color: #1d242f;
   --title-color: #cdd1d6;
+  --color-blog: #041c32;
+  --button-color: #ff4820;
+  --color-text: #749ec7;
+
+  /* size */
   --letter-spacing: 2.5px;
   --border-radius: 4px;
   --nav-height: 75px;
   --section-padding: 3.5rem 4rem;
-  --color-blog: #041c32;
-  --button-color: #ff4820;
-  --color-text: #749ec7;
+  --max-width: 1120px;
 }
 
 /************ Default Css ************/
