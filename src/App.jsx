@@ -5,6 +5,7 @@ import NavBar from './components/navBar/Navbar';
 import Aos from 'aos';
 import 'aos/dist/aos.css';
 import Skills from './components/skills/Skills';
+import Projects from './components/projects/Projects';
 
 function App() {
   useEffect(() => {
@@ -20,6 +21,7 @@ function App() {
       <NavBar />
       <Hero />
       <Skills />
+      <Projects />
     </main>
   );
 }

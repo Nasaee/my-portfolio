@@ -10,10 +10,10 @@ const Skills = () => {
       <SectionTitle title='skills' subTitle='my skills' />
 
       <div className='content'>
-        <div className='img-container'>
+        <div className='img-container' data-aos='fade-right'>
           <img src={skillsImg} />
         </div>
-        <ul className='skills-list'>
+        <ul className='skills-list' data-aos='fade-left' data-aos-delay='500'>
           {skills.map((skill) => {
             const { skillIcon, id, skillName } = skill;
             return (

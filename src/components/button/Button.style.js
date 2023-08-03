@@ -3,6 +3,7 @@ import { styled } from 'styled-components';
 export const BaseButton = styled.div`
   display: flex;
   align-items: center;
+  cursor: pointer;
 
   a {
     display: block;
