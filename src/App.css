@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Paprika&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Paprika&family=Poppins:wght@300;400;500;600;700&display=swap');
 
@@ -6,12 +6,11 @@
   --font-family: 'Manrope', sans-serif;
   --subtitle-font: 'Paprika', cursive;
   --title-font: 'Poppins', sans-serif;
+  --transition: 0.35s ease-in-out;
   /* color */
   --gradient-text: linear-gradient(89.97deg, #ae67fa 1.84%, #f49867 102.67%);
-
   --background-color: #040c18;
   --main-color: #be4bdb;
-  --transition: 0.35s ease-in-out;
   --menu-color: #e6e7e8;
   --menu-bg-color: #1d242f;
   --title-color: #cdd1d6;
