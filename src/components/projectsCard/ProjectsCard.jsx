@@ -2,6 +2,7 @@ import Card from './projectsCard.style';
 
 const ProjectsCard = ({ projects }) => {
   const { title, url, img, sourceCode, info } = projects;
+
   return (
     <Card className='project-card'>
       <img src={img} alt={info} />

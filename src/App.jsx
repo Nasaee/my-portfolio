@@ -6,6 +6,8 @@ import Aos from 'aos';
 import 'aos/dist/aos.css';
 import Skills from './components/skills/Skills';
 import Projects from './components/projects/Projects';
+import { SkeletonTheme } from 'react-loading-skeleton';
+import 'react-loading-skeleton/dist/skeleton.css';
 
 function App() {
   useEffect(() => {
@@ -18,10 +20,12 @@ function App() {
 
   return (
     <main>
-      <NavBar />
-      <Hero />
-      <Skills />
-      <Projects />
+      <SkeletonTheme baseColor='#041c32' highlightColor='#1d3347'>
+        <NavBar />
+        <Hero />
+        <Skills />
+        <Projects />
+      </SkeletonTheme>
     </main>
   );
 }
