@@ -5,12 +5,23 @@ const Section = styled.section`
   min-height: 100vh;
 
   .projects-center {
-    width: 90vw;
     margin: 0 auto;
     max-width: var(--max-width);
     display: grid;
+    place-items: center;
     gap: 2rem;
     grid-template-columns: repeat(3, 1fr);
+  }
+
+  @media screen and (max-width: 1265px) {
+    .projects-center {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+  @media screen and (max-width: 808px) {
+    .projects-center {
+      grid-template-columns: 1fr;
+    }
   }
 `;
 

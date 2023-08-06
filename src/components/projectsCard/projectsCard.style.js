@@ -4,6 +4,7 @@ const Card = styled.div`
   position: relative;
   overflow: hidden;
   height: 15rem;
+  width: 22rem;
   border-radius: var(--border-radius);
 
   img {
@@ -93,6 +94,23 @@ const Card = styled.div`
 
   &:hover::before {
     height: 100%;
+  }
+
+  @media screen and (max-width: 808px) {
+    & {
+      height: 20rem;
+      width: 25rem;
+    }
+  }
+  @media screen and (max-width: 540px) {
+    & {
+      height: 12rem;
+      width: auto;
+    }
+
+    .project-content p {
+      display: none;
+    }
   }
 `;
 

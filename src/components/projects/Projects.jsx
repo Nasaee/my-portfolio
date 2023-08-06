@@ -9,7 +9,7 @@ const Projects = () => {
 
   return (
     <Section id='projects'>
-      <SectionTitle title={'skills'} subTitle={'MY CREATION'} />
+      <SectionTitle title={'projects'} subTitle={'MY CREATION'} />
       <div className='projects-center' data-aos='fade-up'>
         {isLoading && <CardSkeleton cards={6} />}
         {!isLoading &&
