@@ -21,6 +21,13 @@ import {
   postgresqlImg,
 } from './assets/img/skills';
 
+import {
+  htmlCssCertificate,
+  javaScriptCertificate,
+} from './assets/pdf/certificate';
+
+import { resume, graduationCertificate } from './assets/pdf';
+
 export const navigationLinks = [
   { htmlID: 'home', text: 'home', id: nanoid(), icon: <AiFillHome /> },
   { htmlID: 'skills', text: 'skills', id: nanoid(), icon: <AiTwotoneCode /> },
@@ -106,44 +113,42 @@ export const projects = [
 
 export const personalInfo = {
   th: {
-    name: 'นาซาอี',
-    lastName: 'หมัดอะดัม',
-    yearOfBirth: 1992,
+    name: ['ชื่อ', 'นาซาอี'],
+    lastName: ['นามสกุล', 'หมัดอะดัม'],
     address: {
-      alley: 'พัฒนาการ 69',
-      road: 'พัฒนาการ',
-      subDistrict: 'ประเวศ',
-      district: 'ประเวศ',
-      province: 'กรุงเทพ',
+      road: ['ถนน', 'พัฒนาการ'],
+      subDistrict: ['แขวง', 'ประเวศ'],
+      district: ['เขต', 'ประเวศ'],
+      province: ['จังหวัด', 'กรุงเทพ'],
     },
-    resume: 'PDF',
-    graduationCertificate: 'PDF',
-    certificate: [
-      { certificateName: '', certificateImg: '', certificateDescription: '' },
-      { certificateName: '', certificateImg: '', certificateDescription: '' },
-      { certificateName: '', certificateImg: '', certificateDescription: '' },
-    ],
   },
   en: {
-    name: 'Nasa-ee',
-    lastName: 'Madadam',
-    yearOfBirth: 1992,
+    name: ['name', 'Nasa-ee'],
+    lastName: ['last name', 'Madadam'],
     address: {
-      alley: 'Phatthanakan  69',
-      road: 'Phatthanakan ',
-      subDistrict: 'Prawet',
-      district: 'Prawet',
-      province: 'Bangkok',
+      road: ['road', 'Phatthanakan '],
+      subDistrict: ['subDistrict', 'Prawet'],
+      district: ['district', 'Prawet'],
+      province: ['province', 'Bangkok'],
     },
-
-    resume: 'PDF',
-    graduationCertificate: 'PDF',
-    certificate: [
-      { certificateName: '', certificateImg: '', certificateDescription: '' },
-      { certificateName: '', certificateImg: '', certificateDescription: '' },
-      { certificateName: '', certificateImg: '', certificateDescription: '' },
-    ],
   },
+  yearOfBirth: 1992,
+  resume: resume,
+  graduationCertificate: ['graduation certificate', graduationCertificate],
+  certificate: [
+    {
+      certificateName: 'HTML & CSS',
+      certificatePDF: htmlCssCertificate,
+      certificateDescription:
+        'Build responsive real-world websites with HTML & CSS',
+    },
+    {
+      certificateName: 'JavaScript',
+      certificatePDF: javaScriptCertificate,
+      certificateDescription:
+        'The complete JavaScript Course From Zero to Expert',
+    },
+  ],
 };
 
 export const socials = [

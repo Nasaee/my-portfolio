@@ -8,6 +8,7 @@ import Skills from './components/skills/Skills';
 import Projects from './components/projects/Projects';
 import { SkeletonTheme } from 'react-loading-skeleton';
 import 'react-loading-skeleton/dist/skeleton.css';
+import AboutMe from './components/about-me/AboutMe';
 
 function App() {
   useEffect(() => {
@@ -25,6 +26,7 @@ function App() {
         <Hero />
         <Skills />
         <Projects />
+        <AboutMe />
       </SkeletonTheme>
     </main>
   );
