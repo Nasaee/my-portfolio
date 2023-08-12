@@ -119,11 +119,14 @@ export const personalInfo = {
       road: ['ถนน', 'พัฒนาการ'],
       subDistrict: ['แขวง', 'ประเวศ'],
       district: ['เขต', 'ประเวศ'],
-      province: ['จังหวัด', 'กรุงเทพ'],
+      province: ['จังหวัด', 'กรุงเทพมหานคร'],
     },
+    age: ['อายุ', new Date().getFullYear() - 1992, 'ปี'],
+    graduateFrom: ['จบจาก', 'Kolej Universiti Insaniah (Malaysia)'],
+    programe: ['คณะ', 'อักษรศาสตร์ ภาษาอากหรับ'],
   },
   en: {
-    name: ['name', 'Nasa-ee'],
+    name: ['name', 'Nasaee'],
     lastName: ['last name', 'Madadam'],
     address: {
       road: ['road', 'Phatthanakan '],
@@ -131,8 +134,10 @@ export const personalInfo = {
       district: ['district', 'Prawet'],
       province: ['province', 'Bangkok'],
     },
+    age: ['age', new Date().getFullYear() - 1992],
+    graduateFrom: ['graduate from', 'Kolej Universiti Insaniah (Malaysia)'],
+    programe: ['programe', 'bachelor of arabic language (hons)'],
   },
-  yearOfBirth: 1992,
   resume: resume,
   graduationCertificate: ['graduation certificate', graduationCertificate],
   certificate: [

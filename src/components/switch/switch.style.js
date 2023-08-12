@@ -2,7 +2,6 @@ import { styled } from 'styled-components';
 
 const Style = styled.div`
   transform: translateY(-100%);
-
   .switch {
     display: inline-block;
     width: 60px;
@@ -31,7 +30,8 @@ const Style = styled.div`
       position: absolute;
       width: 100%;
       height: 100%;
-      background-color: #777;
+      background-color: limeGreen;
+      font-weight: 600;
       border-radius: 30px;
       transform: translateX(-30px);
       transition: 0.2s;
@@ -40,17 +40,16 @@ const Style = styled.div`
       align-items: center;
       justify-content: flex-end;
 
-      /* tempo */
       span {
-        padding: 0 8px;
+        padding: 0 8.5px;
         color: black;
         font-size: 0.8rem;
+        text-transform: uppercase;
       }
     }
 
     input:checked + .slider .slider-text {
       transform: translateX(30px);
-      background-color: limeGreen;
       justify-content: flex-start;
     }
   }

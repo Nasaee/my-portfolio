@@ -1,12 +1,11 @@
-import { useState } from 'react';
 import Style from './switch.style';
+import { useGlobalContext } from '../../context';
 
-// 11. Elastic Toggle Switch CSS
 const Switch = () => {
-  const [language, setLanguage] = useState('en');
+  const { language, setLanguage } = useGlobalContext();
 
   const switchLanguage = (e) => {
-    const language = e.target.checked ? 'en' : 'th';
+    const language = e.target.checked ? 'th' : 'en';
     setLanguage(language);
   };
 
@@ -16,7 +15,7 @@ const Switch = () => {
         <input type='checkbox' onClick={switchLanguage} />
         <span className='slider'>
           <div className='slider-text'>
-            <span>TH</span>
+            <span>{language === 'en' ? 'th' : 'en'}</span>
           </div>
         </span>
       </label>
