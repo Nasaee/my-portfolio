@@ -9,9 +9,14 @@ const Section = styled.section`
     align-items: center;
     justify-content: center;
     gap: 3rem;
+    transform: translateY(-40px);
 
     .img-container {
       align-self: flex-start;
+
+      img {
+        max-width: 25rem;
+      }
     }
 
     ul.skills-list {

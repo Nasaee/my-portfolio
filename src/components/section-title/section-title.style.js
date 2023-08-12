@@ -15,7 +15,7 @@ const Style = styled.div`
     text-transform: uppercase;
     letter-spacing: 5px;
     font-size: 2rem;
-    color: #eef1f3;
+    color: var(--main-color);
     margin-top: -5px;
   }
 `;

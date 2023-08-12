@@ -1,7 +1,7 @@
 import { styled } from 'styled-components';
 
 const Style = styled.div`
-  background-color: #1d3347;
+  background: #1d3347;
   min-width: 18rem;
   padding: 2rem;
   box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
@@ -25,7 +25,8 @@ const Style = styled.div`
     svg {
       width: 2rem;
       height: 2rem;
-      color: #fa5252;
+      color: #9ba4ad;
+      transition: var(--transition);
     }
   }
 
@@ -35,8 +36,10 @@ const Style = styled.div`
 
     a {
       color: var(--title-color);
+      svg {
+        color: var(--title-color);
+      }
     }
   }
 `;
-
 export default Style;

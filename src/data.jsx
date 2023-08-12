@@ -123,7 +123,7 @@ export const personalInfo = {
     },
     age: ['อายุ', new Date().getFullYear() - 1992, 'ปี'],
     graduateFrom: ['จบจาก', 'Kolej Universiti Insaniah (Malaysia)'],
-    programe: ['คณะ', 'อักษรศาสตร์ ภาษาอากหรับ'],
+    programe: ['คณะ', 'อักษรศาสตร์ ภาษาอาหรับ'],
   },
   en: {
     name: ['name', 'Nasaee'],
@@ -138,7 +138,7 @@ export const personalInfo = {
     graduateFrom: ['graduate from', 'Kolej Universiti Insaniah (Malaysia)'],
     programe: ['programe', 'bachelor of arabic language (hons)'],
   },
-  resume: resume,
+  resume: ['resume', resume],
   graduationCertificate: ['graduation certificate', graduationCertificate],
   certificate: [
     {

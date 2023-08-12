@@ -5,6 +5,7 @@ import { personalInfo } from '../../data';
 import { useGlobalContext } from '../../context';
 import aboutMeImg from '../../assets/img/about-me/about-me.svg';
 import PdfCard from '../pdf-card/PdfCard';
+import OtherCertificate from '../otherCertificate/OtherCertificate';
 
 const AboutMe = () => {
   const { language } = useGlobalContext();
@@ -12,13 +13,15 @@ const AboutMe = () => {
   const { name, lastName, address, age, graduateFrom, programe } =
     personalInfo[language];
   const { road, subDistrict, district, province } = address;
+  const { resume, graduationCertificate } = personalInfo;
+  const pdfList = [resume, graduationCertificate];
 
   return (
     <Section id='about-me'>
       <SectionTitle title='about me' subTitle='know more about me' />
       <Switch />
       <div className='personal-info-container'>
-        <div className='personal-info'>
+        <div className='personal-info' data-aos='fade-right'>
           <p className='name'>
             <span>{`${name[0]} : `}</span>
             <span>{`${name[1]} ${lastName[1]}`} </span>
@@ -42,11 +45,16 @@ const AboutMe = () => {
             </span>
           </p>
         </div>
-        <div className='img-container'>
+        <div className='img-container' data-aos='fade-left'>
           <img src={aboutMeImg} />
         </div>
       </div>
-      <PdfCard />
+      <div className='document-links' data-aos='fade-up'>
+        {pdfList.map((file, i) => {
+          return <PdfCard pdfFile={file} key={i} />;
+        })}
+        <OtherCertificate />
+      </div>
     </Section>
   );
 };
