@@ -1,7 +1,6 @@
 import { styled } from 'styled-components';
 
 const Style = styled.div`
-  transform: translateY(-100%);
   .switch {
     display: inline-block;
     width: 60px;

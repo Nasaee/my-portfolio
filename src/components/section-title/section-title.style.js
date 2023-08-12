@@ -1,7 +1,7 @@
 import { styled } from 'styled-components';
 
 const Style = styled.div`
-  margin-bottom: 6rem;
+  margin-bottom: 4rem;
   .title {
     font-family: var(--title-font);
     font-size: 1.5rem;
