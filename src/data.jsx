@@ -195,7 +195,7 @@ export const socials = [
   },
 ];
 
-export const contectMe = {
+export const contactMe = {
   phone: '0831841131',
   email: 'nasaee.dev@gmail.com',
   facebook: 'https://www.facebook.com/nasaee.madadam',

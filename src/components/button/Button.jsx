@@ -1,10 +1,10 @@
 import { memo } from 'react';
 import { BaseButton } from './Button.style';
 
-const Button = ({ children, linkToGo }) => {
+const Button = ({ children }) => {
   return (
     <BaseButton>
-      <a href={linkToGo} onClick={(e) => e.preventDefault()}>
+      <a href='#contacts'>
         <span>{children}</span>
       </a>
     </BaseButton>
