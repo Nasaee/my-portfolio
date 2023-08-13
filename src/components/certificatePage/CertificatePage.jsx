@@ -13,6 +13,9 @@ const CertificatePage = () => {
       <button className='close-btn' onClick={() => closeCertificatePage()}>
         <BsFillArrowLeftCircleFill />
       </button>
+      <div className='title-container'>
+        <h3 className='title'>My Certificates</h3>
+      </div>
       <div className='center'>
         {certificates.map((certificate) => {
           const { id, certificateName, certificatePDF, certificateImg } =
@@ -35,8 +38,3 @@ const CertificatePage = () => {
   );
 };
 export default CertificatePage;
-
-// htmlCssCertificatePDF,
-//   htmlCssCertificateImg,
-//   javaScriptCertificatePDF,
-//   javaScriptCertificateImg,

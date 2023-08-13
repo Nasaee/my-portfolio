@@ -46,8 +46,8 @@ export const navigationLinks = [
     icon: <BsFillPersonFill />,
   },
   {
-    htmlID: 'contact',
-    text: 'contact',
+    htmlID: 'contacts',
+    text: 'contacts',
     id: nanoid(),
     icon: <BsFillTelephoneFill />,
   },

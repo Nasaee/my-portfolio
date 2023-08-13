@@ -35,6 +35,32 @@ const Style = styled.div`
     transform: scale(1.1);
   }
 
+  .title-container {
+    text-align: center;
+    margin-bottom: 4rem;
+
+    .title {
+      display: inline-block;
+      text-transform: uppercase;
+      color: var(--title-color);
+      font-size: 2rem;
+      letter-spacing: 5px;
+      padding: 5px 0;
+      position: relative;
+    }
+
+    .title::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 3px;
+      background: var(--gradient-text);
+      transition: var(--transition);
+    }
+  }
+
   .center {
     width: 90vw;
     max-width: var(--max-width);
