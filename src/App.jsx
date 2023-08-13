@@ -10,6 +10,8 @@ import { SkeletonTheme } from 'react-loading-skeleton';
 import 'react-loading-skeleton/dist/skeleton.css';
 import AboutMe from './components/about-me/AboutMe';
 import CertificatePage from './components/certificatePage/CertificatePage';
+import Contacts from './components/contacts/Contacts';
+import CallToAction from './components/call-to-action/CallToAction';
 
 function App() {
   useEffect(() => {
@@ -29,6 +31,8 @@ function App() {
         <Projects />
         <AboutMe />
         <CertificatePage />
+        <CallToAction />
+        <Contacts />
       </SkeletonTheme>
     </main>
   );
