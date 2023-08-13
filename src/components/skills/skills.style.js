@@ -3,6 +3,7 @@ import { styled } from 'styled-components';
 const Section = styled.section`
   background: var(--color-blog);
   padding: var(--section-padding);
+  min-height: 100vh;
 
   .content {
     display: flex;

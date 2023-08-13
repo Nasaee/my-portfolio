@@ -7,7 +7,7 @@ const Style = styled.div`
   box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
   border-radius: var(--border-radius);
   transition: var(--transition);
-  a {
+  button {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -16,6 +16,7 @@ const Style = styled.div`
     text-transform: uppercase;
     letter-spacing: var(--letter-spacing);
     color: #687784;
+    background: transparent;
     transition: var(--transition);
 
     p {
@@ -34,7 +35,7 @@ const Style = styled.div`
     transform: scale(1.06);
     box-shadow: 0px 18px 25px rgba(0, 0, 0, 0.2);
 
-    a {
+    button {
       color: var(--title-color);
       svg {
         color: var(--title-color);

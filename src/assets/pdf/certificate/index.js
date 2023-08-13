@@ -1,4 +1,11 @@
-import htmlCssCertificate from './HTML&CSS.pdf';
-import javaScriptCertificate from './javaScript.pdf';
+import htmlCssCertificatePDF from './HTML&CSS.pdf';
+import javaScriptCertificatePDF from './javaScript.jpg';
+import htmlCssCertificateImg from './HTML&CSS.jpg';
+import javaScriptCertificateImg from './javaScript.jpg';
 
-export { htmlCssCertificate, javaScriptCertificate };
+export {
+  htmlCssCertificatePDF,
+  javaScriptCertificatePDF,
+  htmlCssCertificateImg,
+  javaScriptCertificateImg,
+};

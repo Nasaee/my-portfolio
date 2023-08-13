@@ -9,6 +9,7 @@ import Projects from './components/projects/Projects';
 import { SkeletonTheme } from 'react-loading-skeleton';
 import 'react-loading-skeleton/dist/skeleton.css';
 import AboutMe from './components/about-me/AboutMe';
+import CertificatePage from './components/certificatePage/CertificatePage';
 
 function App() {
   useEffect(() => {
@@ -27,6 +28,7 @@ function App() {
         <Skills />
         <Projects />
         <AboutMe />
+        <CertificatePage />
       </SkeletonTheme>
     </main>
   );

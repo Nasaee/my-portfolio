@@ -1,14 +1,16 @@
 import { memo } from 'react';
 import { BsArrowRightSquare } from 'react-icons/bs';
 import Style from './otherCertificate.style';
+import { useGlobalContext } from '../../context';
 
 const OtherCertificate = () => {
+  const { openCertificatePage } = useGlobalContext();
   return (
     <Style>
-      <a href='#' target='_blank' rel='noreferrer'>
+      <button type='button' onClick={() => openCertificatePage()}>
         <p>other skills certificate</p>
         <BsArrowRightSquare />
-      </a>
+      </button>
     </Style>
   );
 };

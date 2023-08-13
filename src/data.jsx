@@ -22,8 +22,10 @@ import {
 } from './assets/img/skills';
 
 import {
-  htmlCssCertificate,
-  javaScriptCertificate,
+  htmlCssCertificatePDF,
+  htmlCssCertificateImg,
+  javaScriptCertificatePDF,
+  javaScriptCertificateImg,
 } from './assets/pdf/certificate';
 
 import { resume, graduationCertificate } from './assets/pdf';
@@ -140,16 +142,20 @@ export const personalInfo = {
   },
   resume: ['resume', resume],
   graduationCertificate: ['graduation certificate', graduationCertificate],
-  certificate: [
+  certificates: [
     {
+      id: nanoid(),
       certificateName: 'HTML & CSS',
-      certificatePDF: htmlCssCertificate,
+      certificatePDF: htmlCssCertificatePDF,
+      certificateImg: htmlCssCertificateImg,
       certificateDescription:
         'Build responsive real-world websites with HTML & CSS',
     },
     {
+      id: nanoid(),
       certificateName: 'JavaScript',
-      certificatePDF: javaScriptCertificate,
+      certificatePDF: javaScriptCertificatePDF,
+      certificateImg: javaScriptCertificateImg,
       certificateDescription:
         'The complete JavaScript Course From Zero to Expert',
     },

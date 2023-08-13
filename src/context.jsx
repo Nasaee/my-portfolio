@@ -6,6 +6,7 @@ export const AppProvider = ({ children }) => {
   const [activeLink, setActiveLink] = useState('home');
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [language, setLanguage] = useState('en');
+  const [isCertificatePageOpen, setIsCertificatePageOpen] = useState(false);
 
   const handleClickLink = (htmlID) => {
     setActiveLink(htmlID);
@@ -13,6 +14,9 @@ export const AppProvider = ({ children }) => {
 
   const closeMenu = () => setIsMenuOpen(false);
   const openMenu = () => setIsMenuOpen(true);
+
+  const closeCertificatePage = () => setIsCertificatePageOpen(false);
+  const openCertificatePage = () => setIsCertificatePageOpen(true);
 
   return (
     <AppContact.Provider
@@ -24,6 +28,9 @@ export const AppProvider = ({ children }) => {
         isMenuOpen,
         language,
         setLanguage,
+        closeCertificatePage,
+        openCertificatePage,
+        isCertificatePageOpen,
       }}
     >
       {children}
