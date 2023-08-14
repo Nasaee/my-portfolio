@@ -12,6 +12,7 @@ import AboutMe from './components/about-me/AboutMe';
 import CertificatePage from './components/certificatePage/CertificatePage';
 import ContactsMe from './components/contacts/ContactsMe';
 import CallToAction from './components/call-to-action/CallToAction';
+import Footer from './components/footer/Footer';
 
 function App() {
   useEffect(() => {
@@ -33,6 +34,7 @@ function App() {
         <CertificatePage />
         <CallToAction />
         <ContactsMe />
+        <Footer />
       </SkeletonTheme>
     </main>
   );

@@ -7,6 +7,7 @@ const Style = styled.div`
   box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
   border-radius: var(--border-radius);
   transition: var(--transition);
+
   button {
     display: flex;
     flex-direction: column;
@@ -18,6 +19,7 @@ const Style = styled.div`
     color: #687784;
     background: transparent;
     transition: var(--transition);
+    margin: 0 auto;
 
     p {
       margin-bottom: 1rem;
