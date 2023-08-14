@@ -64,6 +64,9 @@ const Section = styled.section`
     }
   }
   @media screen and (max-width: 825px) {
+    & {
+      min-height: auto;
+    }
     .grid-container {
       grid-template-columns: 1fr;
     }
