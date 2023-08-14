@@ -8,6 +8,8 @@ import {
 import { GrFacebook } from 'react-icons/gr';
 import { FaGithub } from 'react-icons/fa';
 import { SiGmail, SiTwitter } from 'react-icons/si';
+import { ImPhone } from 'react-icons/im';
+
 import {
   JsImg,
   htmlImg,
@@ -170,6 +172,12 @@ export const socials = [
     id: nanoid(),
   },
   {
+    name: 'Email',
+    url: 'nasaee.dev@gmail.com',
+    icon: <SiGmail />,
+    id: nanoid(),
+  },
+  {
     name: 'Facebook',
     url: 'https://www.facebook.com/nasaee.madadam',
     icon: <GrFacebook />,
@@ -181,23 +189,36 @@ export const socials = [
     icon: <BsLinkedin />,
     id: nanoid(),
   },
-  {
-    name: 'Twitter',
-    url: 'https://twitter.com/nasa_ee',
-    icon: <SiTwitter />,
-    id: nanoid(),
-  },
-  {
-    name: 'Email',
-    url: 'nasaee.dev@gmail.com',
-    icon: <SiGmail />,
-    id: nanoid(),
-  },
+  // {
+  //   name: 'Twitter',
+  //   url: 'https://twitter.com/nasa_ee',
+  //   icon: <SiTwitter />,
+  //   id: nanoid(),
+  // },
 ];
 
 export const contactMe = {
-  phone: '0831841131',
-  email: 'nasaee.dev@gmail.com',
-  facebook: 'https://www.facebook.com/nasaee.madadam',
-  linkIn: 'https://www.linkedin.com/in/nasa-ee-madadam-b3a0b7272/',
+  email: {
+    address: 'nasaee.dev@gmail.com',
+    icon: <SiGmail />,
+    id: nanoid(),
+  },
+  phone: {
+    phoneNo: '0831841131',
+    icon: <ImPhone />,
+    id: nanoid(),
+  },
+  facebook: {
+    userName: 'Nasa-ee Madadam',
+    url: 'https://www.facebook.com/nasaee.madadam',
+    icon: <GrFacebook />,
+    id: nanoid(),
+  },
+
+  linkIn: {
+    userName: 'Nasa-ee Madadam',
+    url: 'https://www.linkedin.com/in/nasa-ee-madadam-b3a0b7272/',
+    icon: <BsLinkedin />,
+    id: nanoid(),
+  },
 };

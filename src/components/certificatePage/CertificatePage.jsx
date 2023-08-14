@@ -6,7 +6,6 @@ import { useGlobalContext } from '../../context';
 const CertificatePage = () => {
   const { certificates } = personalInfo;
   const { closeCertificatePage, isCertificatePageOpen } = useGlobalContext();
-  console.log(isCertificatePageOpen);
 
   return (
     <Style className={isCertificatePageOpen ? 'active' : ''}>

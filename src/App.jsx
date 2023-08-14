@@ -10,7 +10,7 @@ import { SkeletonTheme } from 'react-loading-skeleton';
 import 'react-loading-skeleton/dist/skeleton.css';
 import AboutMe from './components/about-me/AboutMe';
 import CertificatePage from './components/certificatePage/CertificatePage';
-import Contacts from './components/contacts/Contacts';
+import ContactsMe from './components/contacts/ContactsMe';
 import CallToAction from './components/call-to-action/CallToAction';
 
 function App() {
@@ -32,7 +32,7 @@ function App() {
         <AboutMe />
         <CertificatePage />
         <CallToAction />
-        <Contacts />
+        <ContactsMe />
       </SkeletonTheme>
     </main>
   );
