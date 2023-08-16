@@ -10,10 +10,10 @@ const ContactsMe = () => {
     <Section id='contacts'>
       <SectionTitle title='contact me' subTitle='get in touch' />
       <div className='grid-container'>
-        <div className='img-container'>
+        <div className='img-container' data-aos='fade-right'>
           <img src={contactImg} alt='contact wiht other' />
         </div>
-        <div className='contacts'>
+        <div className='contacts' data-aos='fade-left'>
           <a href={`mailto:${email.address}`} className='email'>
             {email.icon}
             <span>{email.address}</span>

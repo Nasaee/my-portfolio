@@ -2,7 +2,7 @@ import { styled } from 'styled-components';
 
 const Section = styled.section`
   padding: var(--section-padding);
-  background: #4f555d;
+  background: var(--background-color);
 
   .center {
     display: flex;

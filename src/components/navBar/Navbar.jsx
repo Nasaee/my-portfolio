@@ -5,13 +5,15 @@ import Menu from '../menu/Menu';
 import { useGlobalContext } from '../../context';
 
 const Navbar = () => {
-  const { activeLink, handleClickLink } = useGlobalContext();
+  const { activeLink, handleClickLink, setActiveLink } = useGlobalContext();
 
   return (
     <Nav data-aos='fade-down'>
       <div className='nav-center'>
         <div className='logo-container'>
-          <a href='#'>NASAEE.DEV</a>
+          <a href='#' onClick={() => setActiveLink('home')}>
+            NASAEE.DEV
+          </a>
         </div>
         <div className='nav-links-container'>
           <ul className='links'>

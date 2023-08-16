@@ -7,7 +7,7 @@ import {
 } from 'react-icons/bs';
 import { GrFacebook } from 'react-icons/gr';
 import { FaGithub } from 'react-icons/fa';
-import { SiGmail, SiTwitter } from 'react-icons/si';
+import { SiGmail } from 'react-icons/si';
 import { ImPhone } from 'react-icons/im';
 
 import {
@@ -189,12 +189,6 @@ export const socials = [
     icon: <BsLinkedin />,
     id: nanoid(),
   },
-  // {
-  //   name: 'Twitter',
-  //   url: 'https://twitter.com/nasa_ee',
-  //   icon: <SiTwitter />,
-  //   id: nanoid(),
-  // },
 ];
 
 export const contactMe = {

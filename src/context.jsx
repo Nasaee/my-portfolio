@@ -22,6 +22,7 @@ export const AppProvider = ({ children }) => {
     <AppContact.Provider
       value={{
         activeLink,
+        setActiveLink,
         handleClickLink,
         closeMenu,
         openMenu,
