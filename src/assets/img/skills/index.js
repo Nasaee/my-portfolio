@@ -9,6 +9,7 @@ import nodeImg from './nodejs.svg';
 import figmaImg from './figma-icon.svg';
 import bootstrapImg from './bootstrap.svg';
 import postgresqlImg from './postgresql.svg';
+import typescriptImg from './typescript.png';
 
 export {
   skillsImg,
@@ -22,4 +23,5 @@ export {
   figmaImg,
   bootstrapImg,
   postgresqlImg,
+  typescriptImg,
 };

@@ -33,7 +33,7 @@ const Navbar = () => {
             })}
           </ul>
         </div>
-        <Button linkToGo={'contact-me'}>HIRE ME</Button>
+        <Button linkToGo={'contact-me'}>CONTACT ME</Button>
       </div>
       <Menu />
     </Nav>

@@ -69,12 +69,10 @@ const Hero = () => {
         </h1>
 
         <p className='intro-myself'>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Aliquam
-          nulla facilisi cras fermentum.Sit amet luctus venenatis lectus magna
-          fringilla. Aliquam malesuada bibendum arcu vitae elementum curabitur
-          vitae nunc sed. Suscipit adipiscing bibendum est ultricies integer.
-          Purus gravida quis blandit turpis cursus in hac habitasse.
+          I graduated from the Faculty of Arabic Arts from Malaysia. My hobby is
+          writing code. I like to learn new technologies and I hope to one day
+          become a programmer. My skills are Javascript, Typescript, React,
+          HTML, CSS. and more...
         </p>
         <ul className='socials'>
           {socials.map((social) => {
@@ -93,7 +91,7 @@ const Hero = () => {
           })}
         </ul>
         <div className='button-container'>
-          <Button>HIRE ME</Button>
+          <Button>CONTACT ME</Button>
         </div>
       </div>
       <div

@@ -6,7 +6,7 @@ import {
   BsLinkedin,
 } from 'react-icons/bs';
 import { GrFacebook } from 'react-icons/gr';
-import { FaGithub } from 'react-icons/fa';
+import { FaFacebook, FaGithub, FaLinkedin } from 'react-icons/fa';
 import { SiGmail } from 'react-icons/si';
 import { ImPhone } from 'react-icons/im';
 
@@ -16,12 +16,11 @@ import {
   cssImg,
   tailwindImg,
   reactImg,
-  sassImg,
   nodeImg,
-  figmaImg,
-  bootstrapImg,
-  postgresqlImg,
+  typescriptImg,
 } from './assets/img/skills';
+
+import { techHubImg } from './assets/img/projects';
 
 import {
   htmlCssCertificatePDF,
@@ -71,6 +70,7 @@ export const skills = [
     skillIcon: JsImg,
     id: nanoid(),
   },
+  { skillName: 'Typescript', skillIcon: typescriptImg, id: nanoid() },
   {
     skillName: 'React.js',
     skillIcon: reactImg,
@@ -81,38 +81,90 @@ export const skills = [
     skillIcon: nodeImg,
     id: nanoid(),
   },
-  {
-    skillName: 'PostgreSQL',
-    skillIcon: postgresqlImg,
-    id: nanoid(),
-  },
+
   {
     skillName: 'Tailwind CSS',
     skillIcon: tailwindImg,
     id: nanoid(),
   },
-  {
-    skillName: 'Bootstrap',
-    skillIcon: bootstrapImg,
-    id: nanoid(),
-  },
-  {
-    skillName: 'SASS',
-    skillIcon: sassImg,
-    id: nanoid(),
-  },
-
-  {
-    skillName: 'Figma',
-    skillIcon: figmaImg,
-    id: nanoid(),
-  },
 ];
 
 export const projects = [
-  { projectTitle: '', projectUrl: '', sourceCode: '' },
-  { projectTitle: '', projectUrl: '', sourceCode: '' },
-  { projectTitle: '', projectUrl: '', sourceCode: '' },
+  {
+    id: nanoid(),
+    title: 'techHub',
+    url: 'https://tecth-hub.netlify.app/',
+    sourceCode: 'https://github.com/Nasaee/techhub-store',
+    info: 'tecthHub Store ecommerce website',
+    img: techHubImg,
+    technology: [
+      'TypeScript',
+      'JavaScript',
+      'React.js',
+      'Node.js',
+      'Tailwind CSS',
+    ],
+  },
+  {
+    id: nanoid(),
+    title: 'techHub',
+    ulr: 'https://tecth-hub.netlify.app/',
+    sourceCode: 'https://github.com/Nasaee/techhub-store',
+    info: 'tecthHub Store ecommerce website',
+    img: techHubImg,
+    technology: [
+      'TypeScript',
+      'JavaScript',
+      'React.js',
+      'Node.js',
+      'Tailwind CSS',
+    ],
+  },
+  {
+    id: nanoid(),
+    title: 'techHub',
+    ulr: 'https://tecth-hub.netlify.app/',
+    sourceCode: 'https://github.com/Nasaee/techhub-store',
+    info: 'tecthHub Store ecommerce website',
+    img: techHubImg,
+    technology: [
+      'TypeScript',
+      'JavaScript',
+      'React.js',
+      'Node.js',
+      'Tailwind CSS',
+    ],
+  },
+  {
+    id: nanoid(),
+    title: 'techHub',
+    ulr: 'https://tecth-hub.netlify.app/',
+    sourceCode: 'https://github.com/Nasaee/techhub-store',
+    info: 'tecthHub Store ecommerce website',
+    img: techHubImg,
+    technology: [
+      'TypeScript',
+      'JavaScript',
+      'React.js',
+      'Node.js',
+      'Tailwind CSS',
+    ],
+  },
+  {
+    id: nanoid(),
+    title: 'techHub',
+    ulr: 'https://tecth-hub.netlify.app/',
+    sourceCode: 'https://github.com/Nasaee/techhub-store',
+    info: 'tecthHub Store ecommerce website',
+    img: techHubImg,
+    technology: [
+      'TypeScript',
+      'JavaScript',
+      'React.js',
+      'Node.js',
+      'Tailwind CSS',
+    ],
+  },
 ];
 
 export const personalInfo = {
@@ -180,13 +232,13 @@ export const socials = [
   {
     name: 'Facebook',
     url: 'https://www.facebook.com/nasaee.madadam',
-    icon: <GrFacebook />,
+    icon: <FaFacebook />,
     id: nanoid(),
   },
   {
     name: 'LinkIN',
     url: 'https://www.linkedin.com/in/nasa-ee-madadam-b3a0b7272/',
-    icon: <BsLinkedin />,
+    icon: <FaLinkedin />,
     id: nanoid(),
   },
 ];

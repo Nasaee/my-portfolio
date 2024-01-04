@@ -6,22 +6,12 @@ const Section = styled.section`
 
   .projects-center {
     margin: 0 auto;
-    max-width: var(--max-width);
     display: grid;
     place-items: center;
-    gap: 2rem;
-    grid-template-columns: repeat(3, 1fr);
-  }
+    grid-template-columns: repeat(auto-fit, minmax(24rem, 1fr));
 
-  @media screen and (max-width: 1265px) {
-    .projects-center {
-      grid-template-columns: 1fr 1fr;
-    }
-  }
-  @media screen and (max-width: 808px) {
-    .projects-center {
-      grid-template-columns: 1fr;
-    }
+    column-gap: 2rem;
+    row-gap: 3rem;
   }
 `;
 

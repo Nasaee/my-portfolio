@@ -7,9 +7,9 @@ export const BaseButton = styled.div`
 
   a {
     display: block;
-    width: 150px;
-    height: 40px;
-    line-height: 40px;
+    width: 200px;
+    height: 45px;
+    line-height: 45px;
     letter-spacing: 1.5px;
     text-align: center;
     color: var(--menu-color);

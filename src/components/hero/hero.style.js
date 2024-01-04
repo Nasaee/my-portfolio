@@ -131,15 +131,15 @@ const Section = styled.section`
     h1 {
       font-size: 3.5rem;
       color: var(--title-color);
-      margin-top: 3rem;
+      margin-top: 4rem;
       span {
         color: var(--main-color);
       }
     }
 
     p {
-      margin-top: 1rem;
-      font-size: 1.1rem;
+      margin-top: 2rem;
+      font-size: 1.5rem;
       letter-spacing: 1.3px;
     }
 
@@ -242,6 +242,10 @@ const Section = styled.section`
     & {
       grid-template-columns: 1fr;
       height: auto;
+
+      .hero-img-container {
+        display: none;
+      }
     }
 
     .profileImg {
