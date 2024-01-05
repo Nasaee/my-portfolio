@@ -9,9 +9,9 @@ const Section = styled.section`
     display: grid;
     place-items: center;
     grid-template-columns: repeat(auto-fit, minmax(24rem, 1fr));
-
     column-gap: 2rem;
-    row-gap: 3rem;
+    row-gap: 2rem;
+    max-width: 1800px;
   }
 `;
 

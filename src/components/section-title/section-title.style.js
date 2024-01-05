@@ -2,6 +2,10 @@ import { styled } from 'styled-components';
 
 const Style = styled.div`
   margin-bottom: 4rem;
+
+  @media (max-width: 500px) {
+    padding: 3rem;
+  }
   .title {
     font-family: var(--title-font);
     font-size: 1.5rem;

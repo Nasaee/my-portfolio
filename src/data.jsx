@@ -18,6 +18,11 @@ import {
   reactImg,
   nodeImg,
   typescriptImg,
+  expressImg,
+  sqlImg,
+  nestImg,
+  dockerImg,
+  graphQlImg,
 } from './assets/img/skills';
 
 import { techHubImg } from './assets/img/projects';
@@ -85,6 +90,30 @@ export const skills = [
   {
     skillName: 'Tailwind CSS',
     skillIcon: tailwindImg,
+    id: nanoid(),
+  },
+];
+
+export const learningSkills = [
+  {
+    skillName: 'Express.js',
+    skillIcon: expressImg,
+    id: nanoid(),
+  },
+  {
+    skillName: 'SQL',
+    skillIcon: sqlImg,
+    id: nanoid(),
+  },
+  {
+    skillName: 'Nest.JS',
+    skillIcon: nestImg,
+    id: nanoid(),
+  },
+  { skillName: 'Docker', skillIcon: dockerImg, id: nanoid() },
+  {
+    skillName: 'GraphQL',
+    skillIcon: graphQlImg,
     id: nanoid(),
   },
 ];
@@ -195,7 +224,7 @@ export const personalInfo = {
     programe: ['programe', 'bachelor of arabic language (hons)'],
   },
   resume: ['resume', resume],
-  graduationCertificate: ['graduation certificate', graduationCertificate],
+  graduationCertificate: ['certificate of graduation', graduationCertificate],
   certificates: [
     {
       id: nanoid(),

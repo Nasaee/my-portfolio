@@ -38,10 +38,13 @@ export default ProjectCard;
 
 const Card = styled.div`
   background: #e9ecef;
-  width: 25rem;
   border-radius: var(--border-radius);
   overflow: hidden;
   position: relative;
+
+  @media (max-width: 500px) {
+    max-width: 300px;
+  }
 
   &::before {
     content: '';

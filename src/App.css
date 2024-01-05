@@ -35,6 +35,12 @@
     0 10px 10px -5px rgba(0, 0, 0, 0.04);
 }
 
+@media (max-width: 500px) {
+  :root {
+    --section-padding: 3rem 1rem;
+  }
+}
+
 /************ Default Css ************/
 
 * {

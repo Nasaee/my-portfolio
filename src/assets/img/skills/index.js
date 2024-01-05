@@ -10,6 +10,11 @@ import figmaImg from './figma-icon.svg';
 import bootstrapImg from './bootstrap.svg';
 import postgresqlImg from './postgresql.svg';
 import typescriptImg from './typescript.png';
+import expressImg from './expressjs.svg';
+import sqlImg from './database.png';
+import nestImg from './nestjs.svg';
+import dockerImg from './docker.svg';
+import graphQlImg from './graphql.svg';
 
 export {
   skillsImg,
@@ -24,4 +29,9 @@ export {
   bootstrapImg,
   postgresqlImg,
   typescriptImg,
+  expressImg,
+  sqlImg,
+  nestImg,
+  dockerImg,
+  graphQlImg,
 };
