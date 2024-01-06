@@ -15,6 +15,7 @@ import sqlImg from './database.png';
 import nestImg from './nestjs.svg';
 import dockerImg from './docker.svg';
 import graphQlImg from './graphql.svg';
+import linuxImg from './linux.svg';
 
 export {
   skillsImg,
@@ -34,4 +35,5 @@ export {
   nestImg,
   dockerImg,
   graphQlImg,
+  linuxImg,
 };

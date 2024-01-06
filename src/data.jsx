@@ -23,6 +23,7 @@ import {
   nestImg,
   dockerImg,
   graphQlImg,
+  linuxImg,
 } from './assets/img/skills';
 
 import { techHubImg } from './assets/img/projects';
@@ -90,6 +91,11 @@ export const skills = [
   {
     skillName: 'Tailwind CSS',
     skillIcon: tailwindImg,
+    id: nanoid(),
+  },
+  {
+    skillName: 'Linux',
+    skillIcon: linuxImg,
     id: nanoid(),
   },
 ];

@@ -9,7 +9,7 @@ const Style = styled.div`
   padding-top: 3rem;
   background: var(--color-blog);
   transform: translateX(100%);
-  transition: 1s ease-in-out;
+  transition: 0.4s ease-in-out;
   opacity: 0.6;
   z-index: 1000;
 
@@ -21,7 +21,7 @@ const Style = styled.div`
   .close-btn {
     background: transparent;
     margin-left: 4rem;
-    transition: var(--transition);
+    transition: 0.35s ease-in-out;
 
     svg {
       width: 3rem;
