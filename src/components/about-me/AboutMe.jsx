@@ -41,7 +41,7 @@ const AboutMe = () => {
           <p className='road'>
             <span>{`${language === 'en' ? 'address' : 'ที่อยู่'} : `}</span>
             <span>
-              {`${road[1]}, ${subDistrict[1]}, ${district[1]}, ${province[1]}`}{' '}
+              {`${road[1]}, ${subDistrict[1]}, ${district[1]}, ${province[1]}`}
             </span>
           </p>
         </div>

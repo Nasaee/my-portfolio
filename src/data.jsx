@@ -1,11 +1,11 @@
 import { nanoid } from 'nanoid';
+import { differenceInYears } from 'date-fns';
 import { AiFillHome, AiTwotoneCode, AiFillAppstore } from 'react-icons/ai';
 import {
   BsFillPersonFill,
   BsFillTelephoneFill,
   BsLinkedin,
 } from 'react-icons/bs';
-import { GrFacebook } from 'react-icons/gr';
 import { FaFacebook, FaGithub, FaLinkedin } from 'react-icons/fa';
 import { SiGmail } from 'react-icons/si';
 import { ImPhone } from 'react-icons/im';
@@ -196,6 +196,9 @@ export const projects = [
   },
 ];
 
+const bornDate = new Date(1992, 11, 23);
+const today = new Date();
+
 export const personalInfo = {
   th: {
     name: ['ชื่อ', 'นาซาอี'],
@@ -206,7 +209,7 @@ export const personalInfo = {
       district: ['เขต', 'ประเวศ'],
       province: ['จังหวัด', 'กรุงเทพมหานคร'],
     },
-    age: ['อายุ', new Date().getFullYear() - 1992, 'ปี'],
+    age: ['อายุ', differenceInYears(today, bornDate)],
     graduateFrom: ['จบจาก', 'Kolej Universiti Insaniah (Malaysia)'],
     programe: ['คณะ', 'อักษรศาสตร์ ภาษาอาหรับ'],
   },
@@ -219,7 +222,7 @@ export const personalInfo = {
       district: ['district', 'Prawet'],
       province: ['province', 'Bangkok'],
     },
-    age: ['age', new Date().getFullYear() - 1992],
+    age: ['age', differenceInYears(today, bornDate)],
     graduateFrom: ['graduate from', 'Kolej Universiti Insaniah (Malaysia)'],
     programe: ['programe', 'bachelor of arabic language (hons)'],
   },
@@ -286,7 +289,7 @@ export const contactMe = {
   facebook: {
     userName: 'Nasa-ee Madadam',
     url: 'https://www.facebook.com/nasaee.madadam',
-    icon: <GrFacebook />,
+    icon: <FaFacebook />,
     id: nanoid(),
   },
 

@@ -160,6 +160,16 @@ const Section = styled.section`
       }
     }
   }
+
+  @media (max-width: 638px) {
+    .call-to-action-container {
+      min-width: 24rem;
+
+      p.call-to-action-text {
+        font-size: 1.4rem;
+      }
+    }
+  }
 `;
 
 export default Section;

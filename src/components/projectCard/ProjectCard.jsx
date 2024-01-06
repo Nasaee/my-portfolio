@@ -144,7 +144,7 @@ const Card = styled.div`
         display: inline-block;
         padding: 1rem 2rem;
         font-family: var(--subtitle-font);
-        font-size: 1rem;
+        font-size: clamp(0.8rem, 1vw, 1rem);
         font-weight: 800;
         color: var(--color-blog);
         letter-spacing: var(--letter-spacing);
