@@ -5,7 +5,7 @@ import { personalInfo } from '../../data';
 import { useGlobalContext } from '../../context';
 import aboutMeImg from '../../assets/img/about-me/about-me.svg';
 import PdfCard from '../pdf-card/PdfCard';
-import OtherCertificate from '../otherCertificate/OtherCertificate';
+import Certificate from '../otherCertificate/OtherCertificate';
 
 const AboutMe = () => {
   const { language } = useGlobalContext();
@@ -53,7 +53,7 @@ const AboutMe = () => {
         {pdfList.map((file, i) => {
           return <PdfCard pdfFile={file} key={i} />;
         })}
-        <OtherCertificate />
+        <Certificate />
       </div>
     </Section>
   );

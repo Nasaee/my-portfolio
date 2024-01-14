@@ -26,13 +26,17 @@ import {
   linuxImg,
 } from './assets/img/skills';
 
-import { techHubImg } from './assets/img/projects';
+import { techHubImg, portfolioImg } from './assets/img/projects';
 
 import {
   htmlCssCertificatePDF,
   htmlCssCertificateImg,
   javaScriptCertificatePDF,
   javaScriptCertificateImg,
+  reactCertificatePDF,
+  reactCertificateImg,
+  cssCertificateImg,
+  cssCertificatePDF,
 } from './assets/pdf/certificate';
 
 import { resume, graduationCertificate } from './assets/pdf';
@@ -142,63 +146,12 @@ export const projects = [
   },
   {
     id: nanoid(),
-    title: 'techHub',
-    ulr: 'https://tecth-hub.netlify.app/',
+    title: 'portfolio',
+    url: 'https://nasaee-portfolio.netlify.app/',
     sourceCode: 'https://github.com/Nasaee/techhub-store',
-    info: 'tecthHub Store ecommerce website',
-    img: techHubImg,
-    technology: [
-      'TypeScript',
-      'JavaScript',
-      'React.js',
-      'Node.js',
-      'Tailwind CSS',
-    ],
-  },
-  {
-    id: nanoid(),
-    title: 'techHub',
-    ulr: 'https://tecth-hub.netlify.app/',
-    sourceCode: 'https://github.com/Nasaee/techhub-store',
-    info: 'tecthHub Store ecommerce website',
-    img: techHubImg,
-    technology: [
-      'TypeScript',
-      'JavaScript',
-      'React.js',
-      'Node.js',
-      'Tailwind CSS',
-    ],
-  },
-  {
-    id: nanoid(),
-    title: 'techHub',
-    ulr: 'https://tecth-hub.netlify.app/',
-    sourceCode: 'https://github.com/Nasaee/techhub-store',
-    info: 'tecthHub Store ecommerce website',
-    img: techHubImg,
-    technology: [
-      'TypeScript',
-      'JavaScript',
-      'React.js',
-      'Node.js',
-      'Tailwind CSS',
-    ],
-  },
-  {
-    id: nanoid(),
-    title: 'techHub',
-    ulr: 'https://tecth-hub.netlify.app/',
-    sourceCode: 'https://github.com/Nasaee/techhub-store',
-    info: 'tecthHub Store ecommerce website',
-    img: techHubImg,
-    technology: [
-      'TypeScript',
-      'JavaScript',
-      'React.js',
-      'Node.js',
-      'Tailwind CSS',
-    ],
+    info: 'My personal portfolio',
+    img: portfolioImg,
+    technology: ['JavaScript', 'React.js', 'styled-components', 'CSS'],
   },
 ];
 
@@ -233,7 +186,7 @@ export const personalInfo = {
     programe: ['programe', 'bachelor of arabic language (hons)'],
   },
   resume: ['resume', resume],
-  graduationCertificate: ['certificate of graduation', graduationCertificate],
+  graduationCertificate: ['transcripts', graduationCertificate],
   certificates: [
     {
       id: nanoid(),
@@ -248,6 +201,22 @@ export const personalInfo = {
       certificateName: 'JavaScript',
       certificatePDF: javaScriptCertificatePDF,
       certificateImg: javaScriptCertificateImg,
+      certificateDescription:
+        'The complete JavaScript Course From Zero to Expert',
+    },
+    {
+      id: nanoid(),
+      certificateName: 'React 18 Tutorial and Projects',
+      certificatePDF: reactCertificatePDF,
+      certificateImg: reactCertificateImg,
+      certificateDescription:
+        'The complete JavaScript Course From Zero to Expert',
+    },
+    {
+      id: nanoid(),
+      certificateName: 'CSS Bootcamp - Master CSS (CSS Grid / CSS Flexbox)',
+      certificatePDF: cssCertificatePDF,
+      certificateImg: cssCertificateImg,
       certificateDescription:
         'The complete JavaScript Course From Zero to Expert',
     },

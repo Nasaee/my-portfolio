@@ -41,6 +41,7 @@ const Card = styled.div`
   border-radius: var(--border-radius);
   overflow: hidden;
   position: relative;
+  height: 100%;
 
   @media (max-width: 500px) {
     max-width: 300px;
