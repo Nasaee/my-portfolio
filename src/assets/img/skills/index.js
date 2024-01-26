@@ -16,6 +16,7 @@ import nestImg from './nestjs.svg';
 import dockerImg from './docker.svg';
 import graphQlImg from './graphql.svg';
 import linuxImg from './linux.svg';
+import mongoDBImg from './mongodb.svg';
 
 export {
   skillsImg,
@@ -36,4 +37,5 @@ export {
   dockerImg,
   graphQlImg,
   linuxImg,
+  mongoDBImg,
 };

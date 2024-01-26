@@ -20,13 +20,15 @@ import {
   typescriptImg,
   expressImg,
   sqlImg,
-  nestImg,
   dockerImg,
   graphQlImg,
   linuxImg,
+  postgresqlImg,
+  mongoDBImg,
+  // nestImg,
 } from './assets/img/skills';
 
-import { techHubImg, portfolioImg } from './assets/img/projects';
+import { techHubImg, portfolioImg, fitnessHubImg } from './assets/img/projects';
 
 import {
   htmlCssCertificatePDF,
@@ -111,13 +113,18 @@ export const learningSkills = [
     id: nanoid(),
   },
   {
+    skillName: 'MongoDB',
+    skillIcon: mongoDBImg,
+    id: nanoid(),
+  },
+  {
     skillName: 'SQL',
     skillIcon: sqlImg,
     id: nanoid(),
   },
   {
-    skillName: 'Nest.JS',
-    skillIcon: nestImg,
+    skillName: 'postgreSQL',
+    skillIcon: postgresqlImg,
     id: nanoid(),
   },
   { skillName: 'Docker', skillIcon: dockerImg, id: nanoid() },
@@ -126,6 +133,11 @@ export const learningSkills = [
     skillIcon: graphQlImg,
     id: nanoid(),
   },
+  // {
+  //   skillName: 'Nest.JS',
+  //   skillIcon: nestImg,
+  //   id: nanoid(),
+  // },
 ];
 
 export const projects = [
@@ -143,6 +155,15 @@ export const projects = [
       'Node.js',
       'Tailwind CSS',
     ],
+  },
+  {
+    id: nanoid(),
+    title: 'Fitness Hub',
+    url: 'https://fitness-hub-application.netlify.app/',
+    sourceCode: 'https://github.com/Nasaee/FitnessHub',
+    info: 'Fitness Hub online and offline fitness application',
+    img: fitnessHubImg,
+    technology: ['TypeScript', 'React.js', 'Styled-components'],
   },
   {
     id: nanoid(),

@@ -1,4 +1,5 @@
-import techHubImg from './techHub.png';
-import portfolioImg from './portfolio.png';
+import techHubImg from './techHub.webp';
+import portfolioImg from './portfolio.webp';
+import fitnessHubImg from './fitness-hub.webp';
 
-export { techHubImg, portfolioImg };
+export { techHubImg, portfolioImg, fitnessHubImg };
