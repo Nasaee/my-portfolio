@@ -2,11 +2,11 @@ import { styled } from 'styled-components';
 
 const Style = styled.div`
   position: fixed;
-  top: 0;
-  left: 0;
+  inset: 0;
   width: 100vw;
   min-height: 100vh;
-  padding-top: 3rem;
+  overflow-y: scroll;
+  padding-block: 3rem;
   background: var(--color-blog);
   transform: translateX(100%);
   transition: 0.4s ease-in-out;

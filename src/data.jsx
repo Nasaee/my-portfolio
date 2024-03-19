@@ -28,7 +28,12 @@ import {
   // nestImg,
 } from './assets/img/skills';
 
-import { techHubImg, portfolioImg, fitnessHubImg } from './assets/img/projects';
+import {
+  techHubImg,
+  portfolioImg,
+  fitnessHubImg,
+  claimTracking,
+} from './assets/img/projects';
 
 import {
   htmlCssCertificatePDF,
@@ -93,6 +98,16 @@ export const skills = [
     skillIcon: nodeImg,
     id: nanoid(),
   },
+  {
+    skillName: 'Express.js',
+    skillIcon: expressImg,
+    id: nanoid(),
+  },
+  {
+    skillName: 'MongoDB',
+    skillIcon: mongoDBImg,
+    id: nanoid(),
+  },
 
   {
     skillName: 'Tailwind CSS',
@@ -107,16 +122,6 @@ export const skills = [
 ];
 
 export const learningSkills = [
-  {
-    skillName: 'Express.js',
-    skillIcon: expressImg,
-    id: nanoid(),
-  },
-  {
-    skillName: 'MongoDB',
-    skillIcon: mongoDBImg,
-    id: nanoid(),
-  },
   {
     skillName: 'SQL',
     skillIcon: sqlImg,
@@ -141,6 +146,23 @@ export const learningSkills = [
 ];
 
 export const projects = [
+  {
+    id: nanoid(),
+    title: 'techHub',
+    url: 'https://cliam-tracking.onrender.com',
+    sourceCode: 'https://github.com/Nasaee/cliam-tracking',
+    info: 'Claim Tracking Medical Instrument application',
+    img: claimTracking,
+    technology: [
+      'TypeScript',
+      'React.js',
+      'Node.js',
+      'Express.js',
+      'MongoDB',
+      'Tailwind CSS',
+      'Styled-components',
+    ],
+  },
   {
     id: nanoid(),
     title: 'techHub',
