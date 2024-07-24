@@ -17,6 +17,9 @@ import dockerImg from './docker.svg';
 import graphQlImg from './graphql.svg';
 import linuxImg from './linux.svg';
 import mongoDBImg from './mongodb.svg';
+import prismaImg from './prisma.svg';
+import nextImg from './nextjs.svg';
+import goImg from './golang.svg';
 
 export {
   skillsImg,
@@ -38,4 +41,7 @@ export {
   graphQlImg,
   linuxImg,
   mongoDBImg,
+  prismaImg,
+  nextImg,
+  goImg,
 };

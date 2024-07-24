@@ -19,13 +19,16 @@ import {
   nodeImg,
   typescriptImg,
   expressImg,
-  sqlImg,
+  // sqlImg,
   dockerImg,
-  graphQlImg,
-  linuxImg,
+  // graphQlImg,
+  // linuxImg,
   postgresqlImg,
   mongoDBImg,
-  // nestImg,
+  prismaImg,
+  nextImg,
+  nestImg,
+  // goImg,
 } from './assets/img/skills';
 
 import {
@@ -89,13 +92,13 @@ export const skills = [
   },
   { skillName: 'Typescript', skillIcon: typescriptImg, id: nanoid() },
   {
-    skillName: 'React.js',
-    skillIcon: reactImg,
+    skillName: 'Node.js',
+    skillIcon: nodeImg,
     id: nanoid(),
   },
   {
-    skillName: 'Node.js',
-    skillIcon: nodeImg,
+    skillName: 'React.js',
+    skillIcon: reactImg,
     id: nanoid(),
   },
   {
@@ -104,29 +107,28 @@ export const skills = [
     id: nanoid(),
   },
   {
+    skillName: 'Next.js',
+    skillIcon: nextImg,
+    id: nanoid(),
+  },
+  {
     skillName: 'MongoDB',
     skillIcon: mongoDBImg,
     id: nanoid(),
   },
-
+  {
+    skillName: 'Prisma',
+    skillIcon: prismaImg,
+    id: nanoid(),
+  },
   {
     skillName: 'Tailwind CSS',
     skillIcon: tailwindImg,
     id: nanoid(),
   },
-  {
-    skillName: 'Linux',
-    skillIcon: linuxImg,
-    id: nanoid(),
-  },
 ];
 
 export const learningSkills = [
-  {
-    skillName: 'SQL',
-    skillIcon: sqlImg,
-    id: nanoid(),
-  },
   {
     skillName: 'postgreSQL',
     skillIcon: postgresqlImg,
@@ -134,13 +136,23 @@ export const learningSkills = [
   },
   { skillName: 'Docker', skillIcon: dockerImg, id: nanoid() },
   {
-    skillName: 'GraphQL',
-    skillIcon: graphQlImg,
+    skillName: 'Nest.JS',
+    skillIcon: nestImg,
     id: nanoid(),
   },
   // {
-  //   skillName: 'Nest.JS',
-  //   skillIcon: nestImg,
+  //   skillName: 'GO',
+  //   skillIcon: goImg,
+  //   id: nanoid(),
+  // },
+  // {
+  //   skillName: 'SQL',
+  //   skillIcon: sqlImg,
+  //   id: nanoid(),
+  // },
+  // {
+  //   skillName: 'GraphQL',
+  //   skillIcon: graphQlImg,
   //   id: nanoid(),
   // },
 ];
