@@ -28,6 +28,11 @@ import {
   prismaImg,
   nextImg,
   nestImg,
+  reduxImg,
+  reduxSagaImg,
+  zodImg,
+  reactHookFormImg,
+  reactQueryIcon,
   // goImg,
 } from './assets/img/skills';
 
@@ -124,6 +129,31 @@ export const skills = [
   {
     skillName: 'Tailwind CSS',
     skillIcon: tailwindImg,
+    id: nanoid(),
+  },
+  {
+    skillName: 'Redux',
+    skillIcon: reduxImg,
+    id: nanoid(),
+  },
+  {
+    skillName: 'Redux-Saga',
+    skillIcon: reduxSagaImg,
+    id: nanoid(),
+  },
+  {
+    skillName: 'React Query',
+    skillIcon: reactQueryIcon,
+    id: nanoid(),
+  },
+  {
+    skillName: 'Zod',
+    skillIcon: zodImg,
+    id: nanoid(),
+  },
+  {
+    skillName: 'React-Hook-Form',
+    skillIcon: reactHookFormImg,
     id: nanoid(),
   },
 ];

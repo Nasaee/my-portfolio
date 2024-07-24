@@ -20,6 +20,11 @@ import mongoDBImg from './mongodb.svg';
 import prismaImg from './prisma.svg';
 import nextImg from './nextjs.svg';
 import goImg from './golang.svg';
+import reduxImg from './redux.svg';
+import reduxSagaImg from './redux-saga.svg';
+import zodImg from './zod.svg';
+import reactHookFormImg from './react-hook-form.svg';
+import reactQueryIcon from './react-query.svg';
 
 export {
   skillsImg,
@@ -44,4 +49,9 @@ export {
   prismaImg,
   nextImg,
   goImg,
+  reduxImg,
+  reduxSagaImg,
+  zodImg,
+  reactHookFormImg,
+  reactQueryIcon,
 };
