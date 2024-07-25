@@ -107,6 +107,11 @@ export const skills = [
     id: nanoid(),
   },
   {
+    skillName: 'React Native',
+    skillIcon: reactImg,
+    id: nanoid(),
+  },
+  {
     skillName: 'Express.js',
     skillIcon: expressImg,
     id: nanoid(),
